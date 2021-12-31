@@ -1,0 +1,59 @@
+.payments-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.heading p{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.tabs-container{
+    width: 100%;
+    margin-top:20px;
+}
+
+.tabs-container ul{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.tabs-container a{
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+.tabs-container a button{
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.tab{
+    font-size: 30px;
+
+}
+
+.tab.active-tab{
+    border: 1px solid rgb(107, 107, 107);
+    border-bottom: none;
+    background-color: white;
+    
+}
+
+.tab:not(.active-tab){
+    border-bottom: 1px solid rgb(156, 156, 156);
+}
+
+.tab-content-container{
+    background-color: white;
+    flex-grow: 1;
+}
+

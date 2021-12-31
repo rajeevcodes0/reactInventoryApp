@@ -1,0 +1,174 @@
+.log-book-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-book-heading{
+    text-align: center;
+}
+
+.clear-log-book-button{
+    background-color: rgb(233, 82, 55);
+    padding:10px;
+    font-size: 15px;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    margin:10px 0px;
+    transition: all 0.2s;
+}
+
+.clear-log-book-button:hover{
+    background-color: rgb(24, 7, 4);
+    
+}
+
+.selling-to-and-selling-date-container{
+   
+    width: 80%;
+}
+
+.selling-to-and-selling-date-section{
+    margin:10px;
+}
+
+.selling-to-and-selling-date-section select,.selling-to-and-selling-date-section input{
+    font-size: 20px;
+}
+/* remove this */
+.log-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    margin:10px 0px;
+    padding:10px;
+    border-radius: 10px;
+}
+/* remove this */
+.log-header{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/* remove this */
+.header-data{
+    flex-basis: 90%;
+    display: flex;
+    align-items: center;
+}
+
+/* remove this */
+.log-id{
+    font-size: 20px;
+    padding:10px;
+    background-color: #001429;
+    color:white;
+    font-weight: bold;
+}
+
+/* remove this */
+.medicine-name{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/* remove this */
+.cancel-button-container{
+    flex-basis: 10%;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    
+}
+/* remove this  */
+.cancel-button-container button{
+    background-color: rgb(221, 60, 60);
+    color:white;
+    border:none;
+    height: 100%;
+    width: 100%;
+    transition: all 0.1s;
+}
+
+/* remove this */
+.cancel-button-container button:hover{
+    background-color: rgb(233, 35, 35);
+    font-size: 22px;
+}
+
+/* remove this */
+.log-body p{
+    margin:10px 0px;
+    font-size: 20px;
+}
+
+.no-content-message{
+    font-size: 20px;
+    color:grey;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed grey;
+    padding:10px;
+    margin:10px 0px;
+
+}
+
+/* remove this */
+.free{
+    padding:10px;
+    background-color: rgb(54, 151, 54);
+    color:white;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* remove this */
+.paid{
+    padding: 10px;
+    background-color: rgb(236, 49, 49);
+    color:white;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.total-sum-container{
+    background-color: white;
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding:20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.total-sum-container p:nth-child(2){
+    font-size: 30px;
+}
+
+.log-book-submit-button-active{
+    background-color: #e95237;
+    font-size: 20px;
+    padding:10px;
+    border-radius: 5px;
+    border:none;
+    transition: 0.3 all;
+}
+
+.log-book-submit-button-disabled{
+    background-color: #c9c3c2;
+    font-size: 20px;
+    padding:10px;
+    border-radius: 5px;
+    border:none;
+}

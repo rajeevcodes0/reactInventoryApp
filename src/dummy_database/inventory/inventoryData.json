@@ -1,0 +1,74 @@
+[
+  {
+    "medicine_id":1,
+    "name": "combiflam",
+    "quantity": 12,
+    "price_per_quantity": 1000,
+    "quantity_type": "carton",
+    "free": false
+  },
+  {
+    "medicine_id":1,
+    "name": "combiflam",
+    "quantity": 5,
+    "price_per_quantity": 100,
+    "quantity_type": "strip",
+    "free": false
+  },
+  {
+    "medicine_id":2,
+    "name": "disprin",
+    "quantity": 3,
+    "price_per_quantity": 7000,
+    "quantity_type": "carton",
+    "free": false
+  },
+  {
+    "medicine_id":1,
+    "name": "combiflam",
+    "quantity": 9,
+    "price_per_quantity": 900,
+    "quantity_type": "carton",
+    "free": true
+  },
+  {
+    "medicine_id":3,
+    "name": "avil",
+    "quantity": 5,
+    "price_per_quantity": 10,
+    "quantity_type": "strip",
+    "free": false
+  },
+  {
+    "medicine_id":4,
+    "name": "oral_b",
+    "quantity": 1,
+    "price_per_quantity": 100,
+    "quantity_type": "bottle",
+    "free": false
+  },
+  {
+    "medicine_id":5,
+    "name": "clear_ear",
+    "quantity": 2,
+    "price_per_quantity": 1000,
+    "quantity_type": "carton",
+    "free": false
+  },
+  {
+    "medicine_id":6,
+    "name": "dettol",
+    "quantity": 10,
+    "price_per_quantity": 100,
+    "quantity_type": "bottle",
+    "free": false
+  },
+  {
+    "medicine_id":1,
+    "name": "combiflam",
+    "quantity": 12,
+    "price_per_quantity": 10,
+    "quantity_type": "strip",
+    "free": true
+  }
+]

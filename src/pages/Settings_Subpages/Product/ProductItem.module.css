@@ -1,0 +1,41 @@
+.small-discount:after{
+    content:"";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+
+    margin-left:5px;
+    background-color:green;
+    text-align: center;
+    border-radius: 5px;
+
+    
+}
+
+.medium-discount::after{
+    content:"";
+    display: inline-block;
+    height: 10px;
+    width: 10px;;
+
+    margin-left:5px;
+    background-color:orange;
+    text-align: center;
+    border-radius: 5px;
+
+    
+}
+.heavy-discount:after{
+    content:"";
+    display: inline-block;
+    height: 10px;
+    width: 10px;;
+
+    margin-left:5px;
+    background-color:red;
+    text-align: center;
+    border-radius: 5px;
+
+    
+}
+

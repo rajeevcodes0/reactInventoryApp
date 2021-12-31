@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+body,html{
+  height: 100%;
+  width: 100%;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+.prompt{
+  position: absolute;
+  z-index: 2;
+  width: 60%;
+  top:120px;
+  left:0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px;
+  margin:0px auto;
+
+}
+
+.prompt-success{
+  background-color: rgb(111, 226, 111);
+  color:black;
+}
+
+.prompt-error{
+  background-color: rgb(238, 111, 111);
+  color:white;
+}

@@ -1,0 +1,46 @@
+.transactions-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.transactions-container h1{
+    width: 100%;
+    text-align: center;
+}
+
+.links-container{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+}
+
+.links-container a li{
+    list-style: none;
+}
+
+.links-container  a{
+    flex-grow: 1;
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    padding:10px;
+}
+
+.link{
+    border-bottom: 1px solid grey;
+    background-color: #e0dbf1;
+}
+
+.active-link{
+    border:1px solid grey;
+    border-bottom: none;
+    background-color: white;
+}
+
+.link-content-container{
+    background-color: white;
+    flex-grow: 1;
+}
+

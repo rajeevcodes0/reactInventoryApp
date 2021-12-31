@@ -1,0 +1,42 @@
+.settings-container{
+    height: 100%;
+    width: 100%;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+}
+
+.settings-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link-container{
+    width: 80%;
+    background-color: #00172a;
+    margin:10px 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius:10px ;
+}
+
+.link-container:hover{
+    background-color: #df3737;
+}
+
+.link-container i{
+    background-color: white;
+    font-size: 20px;
+    padding:10px;
+    
+}
+
+.link-container a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    padding-left:10px;
+}

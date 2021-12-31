@@ -1,0 +1,35 @@
+.show-packages-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-item-container{
+    margin:10px;
+    padding:10px;
+    display: flex;
+    width: 80%;
+    font-size: 20px;
+    border: 1px solid grey;
+
+}
+
+/*i used the nth child , because using the classnames (.index and .name) was not working*/
+.package-item-container p:nth-child(1){
+    flex-basis: 10%;
+}
+
+.package-item-container p:nth-child(2){
+    flex-grow: 1;
+    text-transform: capitalize;
+}
+
+.package-item-container button{
+    flex-basis: 10%;
+    background-color: tomato;
+    border: none;
+    color:white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding:5px;
+}

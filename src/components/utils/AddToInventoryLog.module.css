@@ -1,0 +1,80 @@
+.log-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    margin:10px 0px;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.log-header{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.header-data{
+    flex-basis: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.log-id{
+    font-size: 20px;
+    padding:10px;
+    background-color: #001429;
+    color:white;
+    font-weight: bold;
+}
+
+.medicine-name{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.cancel-button-container{
+    flex-basis: 10%;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    
+}
+
+.cancel-button-container button{
+    background-color: rgb(221, 60, 60);
+    color:white;
+    border:none;
+    height: 100%;
+    width: 100%;
+    transition: all 0.1s;
+}
+
+.cancel-button-container button:hover{
+    background-color: rgb(233, 35, 35);
+    font-size: 22px;
+}
+
+.log-body p{
+    margin:10px 0px;
+    font-size: 20px;
+}
+
+.free{
+    padding:10px;
+    background-color: rgb(54, 151, 54);
+    color:white;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.paid{
+    padding: 10px;
+    background-color: rgb(236, 49, 49);
+    color:white;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+}

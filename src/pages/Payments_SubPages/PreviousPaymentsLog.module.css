@@ -1,0 +1,35 @@
+.previous-payments-log-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin:10px 0px;
+    width: 80%;
+    border: 1px solid grey;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.cancel-button-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.cancel-button-container button{
+    padding:5px;
+    background-color: tomato;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.previous-payments-log-container table{
+    border-spacing: 0px 15px;
+    width: 100%;
+}
+
+.previous-payments-log-container td:nth-child(1){
+    color:rgb(99, 94, 94);
+    text-align: left;
+}

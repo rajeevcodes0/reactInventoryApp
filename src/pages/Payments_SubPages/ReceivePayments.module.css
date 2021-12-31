@@ -1,0 +1,62 @@
+.receive-payments-container{
+    background-color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.receive-payments-section{
+    margin:10px 0px;
+}
+
+.receive-payments-section:nth-child(2) p{
+    font-size: 20px;
+}
+
+.receive-payments-section:nth-child(2) select{
+    font-size: 20px;
+}
+.receive-payments-container form{
+    width: 80%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label{
+    font-size: 20px;
+}
+
+.input-container input{
+    font-size: 20px;
+    height: 40px;
+    padding:10px;
+}
+
+.submit-button-active{
+    background-color: tomato;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    width: 100px;
+    padding:10px;
+}
+
+.submit-button-disabled{
+    background-color: rgb(194, 185, 183);
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100px;
+    padding:10px;
+}
+

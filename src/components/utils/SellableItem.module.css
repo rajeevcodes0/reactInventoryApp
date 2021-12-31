@@ -1,0 +1,87 @@
+.sellable-item-container{
+    width: 80%;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    margin:10px;
+}
+
+.sellable-item-data-info{
+    flex-grow: 1;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sellable-item-data-info p{
+    flex-basis: 60%;
+    flex-grow: 1;
+}
+button.is-selling-button{
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgb(72, 221, 72);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0.1px black;
+}
+
+button.cancel-selling-button{
+    font-size: 10px;
+    padding: 10px;
+    background-color: rgb(221, 72, 72);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0.1px black;
+}
+
+.select-medicine-quantity-form{
+    display: flex;
+    flex-direction: column;
+    margin:10px 0px;
+}
+
+.select-medicine-quantity-form form{
+    width: 100%;
+}
+
+.select-medicine-quantity-form input{
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    margin:10px 0px;
+}
+
+.select-medicine-quantity-form button.is-active{
+    padding:10px;
+    font-size: 15px;
+    background-color: rgb(76, 241, 84);
+    border:none;
+    border-radius: 10px;
+}
+
+.select-medicine-quantity-form button.is-active{
+    padding:10px;
+    font-size: 15px;
+    background-color: rgb(76, 241, 84);
+    border:none;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.select-medicine-quantity-form button.is-disabled{
+    padding:10px;
+    font-size: 15px;
+    background-color: rgb(126, 125, 125);
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
+
+/* the class below helps in showing the sellable item container when we select to chose quantity to sell */
+.is-selling{
+    flex-direction: column;
+}
