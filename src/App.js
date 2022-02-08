@@ -25,6 +25,7 @@ function App() {
     <div className={classes["app-flex-container"]}>
       <div className={classes["app"]}>
         <Header/>
+        
         {AppManagerContext.promptState.isPromptShown && <Prompt/>}
         <div className={classes["app-body"]}>
           {!AppManagerContext.isLoggedIn?<LoginForm />:<LoggedInContent/>}
