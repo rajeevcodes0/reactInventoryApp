@@ -1,0 +1,36 @@
+/*
+CREATE TABLE `opd_patient_info` (
+	`patient_id` bigint NOT NULL,
+	`first_name` varchar(50) NOT NULL,
+    `last_name` varchar(50) NOT NULL,
+	`age` int NOT NULL,
+	`address` varchar(100) NOT NULL,
+	`gender` varchar(10) NOT NULL,
+	`contact_number` int NOT NULL,
+	PRIMARY KEY (`patient_id`)
+);
+
+CREATE TABLE `opd_patient_arrival_info` (
+	`s_no` bigint NOT NULL AUTO_INCREMENT,
+	`patient_id` bigint NOT NULL,
+	`arrival_date` DATE NOT NULL,
+	`amount_paid` FLOAT NOT NULL,
+	PRIMARY KEY (`s_no`)
+);
+
+
+INSERT INTO `opd_adresses`(`s_no`, `address`) VALUES 
+(NULL,'Akbarbas'),
+(NULL,'Akbarpur'),
+(NULL,'Alampur Urf Chilmapur'),
+(NULL,'Amarna Babu Urf Unchagaon Bang'),
+(NULL,'Amarna Babu/Uncha Gaon Khader'),
+(NULL,'Amarpur'),
+(NULL,'Asadpur Gher'),
+(NULL,'Asalatpur Naojar Pur Bange'),
+(NULL,'Asalatpur Urf Naojarpur Khada'),
+(NULL,'Aukhad'),
+(NULL,'Aurangabad Kasair'),
+(NULL,'Badarpur'),
+(NULL,'Badhaur')
+*/

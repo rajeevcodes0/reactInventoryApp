@@ -1,0 +1,301 @@
+Reset auto-increment value when deploy
+1. LOGIN
+Request:
+URL: https://genxtutorial.com/api2/login/index.php 
+JSON: {
+		"username" :"rajeev",
+		"password":"rajeev123"
+	  }
+Response:  If correct
+{
+    "status": true
+}
+If incorrect
+{
+    "status": false,
+    "reason": "wrong_credentials"
+}
+
+
+2. app_data
+Request:
+URL: https://genxtutorial.com/api2/app-data/index.php 
+
+Response:
+{
+    "outstanding_amount": {
+        "medical": 640,
+        "dispensary": 0
+    },
+    "medicine_names": [
+        {
+            "product_name": "combiflam",
+            "medicine_id": "1"
+        }
+    ],
+    "inventory_data": [
+        {
+            "medicine_id": "1",
+            "product_name": "combiflam",
+            "quantity": "47",
+            "MRP": "500",
+            "package_type": "carton",
+            "is_free": "0"
+        }
+    ],
+"package_types":["carton","bottle","strip"]
+}
+
+3. Log-book-sell-data 
+Request:
+URL: https://genxtutorial.com/api2/log-book-sell-data/index.php
+JSON:
+
+{
+    "selling_to":"medical",
+    "sell_data" :[{
+        "medicine_id":1,
+        "package_type":"carton",
+        "product_name":"combiflam",
+        "quantity":1,
+        "MRP":500,
+        "discount":20,
+        "total_price":320,
+        "selling_date":"2021/11/19"
+    }],
+    "sum_total":320    
+}
+
+Response:
+
+{
+    "status": true
+}
+
+4. Log-book-add-to-inventory-data
+Request:
+URL: https://genxtutorial.com/api2/log-book-add-to-inventory-data/index.php
+JSON: 
+{
+    "add_data":[{
+        "product_name"      :"combiflam",
+        "quantity"           :2,
+        "MRP"           :400,
+        "discount" :40,
+        "total_price"   : 1200,
+        "is_free"       :0,
+        "package_type"          :"carton"
+        
+    }],
+    "sum_total":2000
+}
+
+Response:
+{
+    "status": true
+}
+5. Payment receive
+Request: https://genxtutorial.com/api2/payment/payment-receive/index.php
+URL: 
+[
+    {
+        "total_amount":500,
+        "receive_from":"dispensary",
+        "money_receive_date":"2021/11/21"
+    }
+]
+
+
+Response :
+{
+    "status": true
+}
+5.1 show-all-payments
+https://genxtutorial.com/api2/payment/show-all-payments/index.php
+
+Response
+[
+  {
+		"transaction_no":26262621
+        "total_amount":500,
+        "receive_from":"dispensary",
+        "money_receive_date":"2021/11/21"
+   }
+]
+
+5.2 delete
+Request:
+https://genxtutorial.com/api2/payment/delete-payment/index.php
+{
+ "transaction_no":
+}
+
+Response:
+{
+    "status": true
+}
+
+6. Add Product
+Request: https://genxtutorial.com/api2/product/add/index.php
+JSON:
+{
+        "product_name":"avil3"
+}
+
+Response: 
+If duplicate
+{
+    "status": false,
+    "reason": "Medicine already exist"
+}
+If unique:
+{
+    "status": true
+}
+If any server/execution error:
+{
+    "status": false,
+    "reason": "Internal server error"
+}
+
+6.1 Show product
+Request 
+URL: https://genxtutorial.com/api2/product/show/index.php
+Response:
+
+["avail","combiflam","disprin"]
+
+
+6.2 delete product
+
+Request  https://genxtutorial.com/api2/product/delete/index.php
+JSON: 
+{
+ "product_name":"avil3"
+}
+
+Response:
+{
+	"status":"true"
+}
+
+7. add-package-type
+Request: https://genxtutorial.com/api2/package-type/add/index.php
+JSON:
+{
+  "package_type":
+}
+Response:
+
+{
+ "status":"true"
+}
+
+7.1 delete-package-type
+Request:Request: https://genxtutorial.com/api2/package-type/delete/index.php
+{
+  "package_type":
+}
+
+Response
+{
+ "status":"true"
+}
+7.2 show-package-type
+Request: https://genxtutorial.com/api2/package-type/show/index.php
+Response:
+
+["carton","strip","bottle"]
+
+******************************************************************
+					Transactions
+******************************************************************
+
+
+8.1 Show last transaction
+https://genxtutorial.com/api2/transactions/show/index.php
+Request :
+{
+  "no_of_transactions":"1"	
+}
+
+Response 1:
+{
+    "medicine_add": {
+        "transaction_no": "20211205074133",
+        "sum_total": "12000",
+        "timestamp": "2021-12-05 07:41:33"
+    }
+}
+Response 2:
+{
+       "medicine_given": {
+            "transaction_no": "20211205074127",
+            "sum_total": "320",
+            "timestamp": "2021-12-05 07:41:27",
+            "selling_to": "medical",
+            "selling_date": "2021-11-19"
+        }
+}
+
+8.2 delete a transaction 
+https://genxtutorial.com/api2/transactions/delete/index.php
+Request 1:
+{
+	"transaction_no":"129228",
+	"field_name":"medicine_add"      
+}
+Request 2:
+{
+	"transaction_no":"129228",
+	"field_name":"medicine_given"      
+}
+
+
+Response:
+{
+	"status":true
+}
+
+
+
+8.3 Show all transaction
+Request :
+{
+  "no_of_transactions":"all"	
+}
+
+Response:
+[
+    {
+        "medicine_add": {
+            "transaction_no": "20211205074133",
+            "sum_total": "12000",
+            "timestamp": "2021-12-05 07:41:33"
+        }
+    },
+    {
+        "medicine_given": {
+            "transaction_no": "20211205074127",
+            "sum_total": "320",
+            "timestamp": "2021-12-05 07:41:27",
+            "selling_to": "medical",
+            "selling_date": "2021-11-19"
+        }
+    },
+    {
+        "medicine_add": {
+            "transaction_no": "20211205074122",
+            "sum_total": "12000",
+            "timestamp": "2021-12-05 07:41:22"
+        }
+    }
+]
+
+9.0 Logout
+Request:
+URL: https://genxtutorial.com/api2/logout/index.php 
+Response:
+{
+    "status": true
+}
